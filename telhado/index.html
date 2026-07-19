@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vista lateral do telhado</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --fundo: #f4efe6;
+      --tinta: #1c1a17;
+      --acento: #9a4b2e;
+      --papel: #fffdf8;
+      --linha: #d7cfc0;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Source Sans 3", sans-serif;
+      color: var(--tinta);
+      background:
+        radial-gradient(ellipse at 20% 0%, #efe4d2 0%, transparent 50%),
+        radial-gradient(ellipse at 90% 100%, #e8d7c4 0%, transparent 45%),
+        var(--fundo);
+    }
+
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 3rem;
+    }
+
+    h1 {
+      font-family: "Fraunces", serif;
+      font-weight: 600;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      margin: 0 0 0.4rem;
+      letter-spacing: -0.02em;
+    }
+
+    .lead {
+      margin: 0 0 1.75rem;
+      max-width: 42rem;
+      line-height: 1.5;
+      color: #3d3830;
+    }
+
+    .folha {
+      background: var(--papel);
+      border: 1px solid var(--linha);
+      padding: 1rem;
+      overflow: auto;
+    }
+
+    .folha img,
+    .folha object {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .grelha {
+      display: grid;
+      gap: 1.5rem;
+      margin-top: 1.75rem;
+    }
+
+    @media (min-width: 800px) {
+      .grelha { grid-template-columns: 1fr 1fr; }
+    }
+
+    h2 {
+      font-family: "Fraunces", serif;
+      font-size: 1.15rem;
+      margin: 0 0 0.6rem;
+      color: var(--acento);
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      line-height: 1.55;
+    }
+
+    .nota {
+      margin-top: 1.5rem;
+      padding: 0.9rem 1rem;
+      border-left: 3px solid var(--acento);
+      background: rgba(154, 75, 46, 0.08);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Vista lateral do telhado</h1>
+    <p class="lead">
+      Elevação do frontão de um telhado de duas águas, com beirados, cumeeira e pendente indicativos.
+      Os valores são ilustrativos e devem ser ajustados à medida real da obra.
+    </p>
+
+    <div class="folha">
+      <object data="vista-lateral.svg" type="image/svg+xml" aria-label="Desenho técnico da vista lateral do telhado">
+        <img src="vista-lateral-telhado.png" alt="Vista lateral do telhado de duas águas" />
+      </object>
+    </div>
+
+    <div class="grelha">
+      <section>
+        <h2>Elementos</h2>
+        <ul>
+          <li>Cumeeira no ponto mais alto</li>
+          <li>Duas águas com telha</li>
+          <li>Beirado de ~0,50 m de cada lado</li>
+          <li>Pendente α ≈ 30°</li>
+          <li>Estrutura sugerida (asnas / madres)</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Cotas de partida</h2>
+        <ul>
+          <li>Largura da parede ≈ 8,00 m</li>
+          <li>Altura da parede ≈ 2,70 m</li>
+          <li>Altura do telhado ≈ 2,30 m</li>
+          <li>Beirado ≈ 0,50 m</li>
+        </ul>
+      </section>
+    </div>
+
+    <p class="nota">
+      Se quiseres outra tipologia (uma água, quatro águas, mansarda) ou medidas exactas,
+      indica largura, altura desejada e tipo de telha — actualizo o desenho.
+    </p>
+  </main>
+</body>
+</html>
