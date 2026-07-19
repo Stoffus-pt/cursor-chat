@@ -1,22 +1,22 @@
-# Vista lateral do telhado
+# Corte transversal do telhado
 
-Desenho técnico da **elevação lateral** (frontão) de um telhado de duas águas.
+Vista lateral do telhado da casa, cotada com as medidas reais.
 
-## Ficheiros
-
-- [`telhado/vista-lateral.svg`](telhado/vista-lateral.svg) — desenho vectorial cotado
-- [`telhado/vista-lateral-telhado.png`](telhado/vista-lateral-telhado.png) — renderização visual
-- [`telhado/index.html`](telhado/index.html) — página para consultar o desenho
-
-## Proposta base (ilustrativa)
+## Medidas
 
 | Elemento | Valor |
 | --- | --- |
+| Comprimento | 12,00 m |
+| Largura | 6,35 m |
+| Espessura das paredes | 0,30 m |
+| Vão interior | 5,75 m |
+| Cume em relação ao beiral | 1,80 m |
+| Pendente | ≈ 29,6° |
+| Comprimento de cada água | ≈ 3,65 m |
 | Tipologia | Duas águas |
-| Pendente | ≈ 30° |
-| Largura da parede | ≈ 8,00 m |
-| Altura da parede | ≈ 2,70 m |
-| Altura do telhado | ≈ 2,30 m |
-| Beirado | ≈ 0,50 m |
 
-As cotas são de partida e devem ser ajustadas à obra real.
+## Ficheiros
+
+- [`telhado/vista-lateral.svg`](telhado/vista-lateral.svg) — corte transversal vectorial cotado
+- [`telhado/vista-lateral-telhado.png`](telhado/vista-lateral-telhado.png) — renderização
+- [`telhado/index.html`](telhado/index.html) — página de consulta
