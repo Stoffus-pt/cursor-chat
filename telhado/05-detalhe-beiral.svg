@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" width="900" height="640">
+  <defs>
+    <pattern id="telhaD" patternUnits="userSpaceOnUse" width="20" height="11" patternTransform="rotate(-29.55)">
+      <path d="M0 8 Q5 2 10 8 Q15 2 20 8" fill="none" stroke="#a65332" stroke-width="1.2"/>
+    </pattern>
+    <pattern id="canD" patternUnits="userSpaceOnUse" width="5" height="10">
+      <line x1="1.5" y1="0" x2="1.5" y2="10" stroke="#c4a574" stroke-width="1.4"/>
+    </pattern>
+    <pattern id="alvD" patternUnits="userSpaceOnUse" width="14" height="10">
+      <rect width="14" height="10" fill="#f3eee4"/>
+      <path d="M0 10 H14 M7 0 V10" stroke="#d8cfc0" stroke-width="0.9"/>
+    </pattern>
+    <style>
+      .f{fill:#faf7f1}.t{font-family:"IBM Plex Sans",sans-serif;fill:#1a1a1a}
+      .ti{font-size:20px;font-weight:700}.s{font-size:12px;fill:#555}.r{font-size:13px}
+      .rp{font-size:12px;fill:#333}.c{stroke:#222;fill:none;stroke-width:1.15}
+      .cf{stroke:#222;fill:none;stroke-width:0.9}.lo{stroke:#222;stroke-width:2;fill:none}
+      .es{fill:#8a6240;stroke:#5a3d24;stroke-width:1.5}
+    </style>
+  </defs>
+  <rect class="f" width="900" height="640"/>
+  <text class="t ti" x="32" y="36">Peça 05  Pormenor do beiral / apoio na parede</text>
+  <text class="t s" x="32" y="56">Escala ampliada · parede 0,30 m · beiral 0,25 m · pendente 29,6°</text>
+
+  <!-- Escala 1m = 200px para detalhe -->
+  <!-- Parede: 0.30 = 60px. Beiral 0.25 = 50px. Altura mostrada ~1.2m = 240px -->
+  <g transform="translate(220,120)">
+    <!-- Parede -->
+    <rect x="0" y="80" width="60" height="320" fill="url(#alvD)" stroke="#222" stroke-width="2"/>
+    <!-- Frechal -->
+    <rect class="es" x="-4" y="68" width="68" height="22"/>
+    <!-- Caibro -->
+    <g transform="rotate(-29.55 30 80)">
+      <rect class="es" x="-80" y="55" width="220" height="18"/>
+    </g>
+    <!-- Caniço -->
+    <g transform="rotate(-29.55 30 80)">
+      <rect x="-90" y="40" width="240" height="16" fill="url(#canD)" stroke="#8a7350"/>
+    </g>
+    <!-- Telha -->
+    <g transform="rotate(-29.55 30 80)">
+      <rect x="-100" y="22" width="260" height="22" fill="url(#telhaD)" stroke="#222"/>
+    </g>
+    <!-- Telhão / beira -->
+    <ellipse cx="-55" cy="145" rx="22" ry="12" fill="#a65332" stroke="#222" transform="rotate(-29.55 -55 145)"/>
+
+    <!-- Cotas -->
+    <line class="c" x1="0" y1="420" x2="60" y2="420"/>
+    <line class="cf" x1="0" y1="412" x2="0" y2="428"/>
+    <line class="cf" x1="60" y1="412" x2="60" y2="428"/>
+    <text class="t r" x="8" y="442">0,30 m</text>
+
+    <line class="c" x1="-50" y1="400" x2="0" y2="400"/>
+    <line class="cf" x1="-50" y1="392" x2="-50" y2="408"/>
+    <line class="cf" x1="0" y1="392" x2="0" y2="408"/>
+    <text class="t r" x="-48" y="388">0,25 m</text>
+
+    <!-- Legendas com linhas -->
+    <line class="cf" x1="120" y1="40" x2="200" y2="20"/>
+    <text class="t rp" x="205" y="24">1. Telha (canudo / lusa)</text>
+    <line class="cf" x1="130" y1="70" x2="200" y2="60"/>
+    <text class="t rp" x="205" y="64">2. Caniço ou ripado + subcobertura</text>
+    <line class="cf" x1="140" y1="100" x2="200" y2="100"/>
+    <text class="t rp" x="205" y="104">3. Caibro</text>
+    <line class="cf" x1="70" y1="80" x2="200" y2="140"/>
+    <text class="t rp" x="205" y="144">4. Frechal / madre de beiral</text>
+    <line class="cf" x1="60" y1="200" x2="200" y2="180"/>
+    <text class="t rp" x="205" y="184">5. Parede de alvenaria 0,30 m</text>
+  </g>
+
+  <g transform="translate(32,520)">
+    <text class="t r" x="0" y="0">Notas de execução</text>
+    <text class="t rp" x="0" y="24">" Assentar frechal nivelado e ancorado à parede (varões / cintas conforme estado da alvenaria).</text>
+    <text class="t rp" x="0" y="44">" Caibros com apoio mínimo de 2/3 da espessura da parede ou sobre frechal contínuo.</text>
+    <text class="t rp" x="0" y="64">" Garantir pingadeira / gota no beiral; telhas de beira bem fixas ao vento.</text>
+    <text class="t rp" x="0" y="84">" Recomenda-se subcobertura impermeável sob o caniço/ripado na reabilitação.</text>
+  </g>
+</svg>

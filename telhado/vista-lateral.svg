@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 700" width="980" height="700">
+  <defs>
+    <pattern id="telha" patternUnits="userSpaceOnUse" width="16" height="9" patternTransform="rotate(-29.55)">
+      <path d="M0 7 Q4 1.5 8 7 Q12 1.5 16 7" fill="none" stroke="#a65332" stroke-width="1"/>
+    </pattern>
+    <pattern id="canico" patternUnits="userSpaceOnUse" width="4" height="8">
+      <line x1="1" y1="0" x2="1" y2="8" stroke="#c4a574" stroke-width="1.2"/>
+    </pattern>
+    <pattern id="alv" patternUnits="userSpaceOnUse" width="12" height="8">
+      <rect width="12" height="8" fill="#f3eee4"/>
+      <path d="M0 8 H12 M6 0 V8" stroke="#d8cfc0" stroke-width="0.8"/>
+    </pattern>
+    <style>
+      .f{fill:#faf7f1}.t{font-family:"IBM Plex Sans",sans-serif;fill:#1a1a1a}
+      .ti{font-size:20px;font-weight:700}.s{font-size:12px;fill:#555}.r{font-size:13px}
+      .rp{font-size:11.5px;fill:#333}.c{stroke:#222;fill:none;stroke-width:1.15}
+      .cf{stroke:#222;fill:none;stroke-width:0.9}.lo{stroke:#222;stroke-width:2;fill:none}
+      .es{stroke:#6b4a2e;stroke-width:3;fill:#8a6240}.ef{stroke:#6b4a2e;stroke-width:2;fill:none}
+    </style>
+  </defs>
+  <rect class="f" width="980" height="700"/>
+  <text class="t ti" x="36" y="36">Peça 03  Corte transversal AA</text>
+  <text class="t s" x="36" y="56">Largura 6,35 m · paredes 0,30 m · cume ’ beiral 1,80 m · ± H 29,6°</text>
+
+  <!-- Escala 1m=80px. x0=160 y_beiral=340. W=508, wall=24, h=144, centro=414, cume_y=196 -->
+  <rect x="160" y="340" width="24" height="180" fill="url(#alv)" stroke="#222" stroke-width="1.8"/>
+  <rect x="644" y="340" width="24" height="180" fill="url(#alv)" stroke="#222" stroke-width="1.8"/>
+  <line class="lo" x1="184" y1="340" x2="184" y2="520"/>
+  <line class="lo" x1="644" y1="340" x2="644" y2="520"/>
+  <line class="ef" x1="184" y1="340" x2="644" y2="340" stroke-dasharray="6 4"/>
+
+  <!-- Frechais -->
+  <rect class="es" x="158" y="332" width="30" height="12"/>
+  <rect class="es" x="640" y="332" width="30" height="12"/>
+
+  <!-- Caniço + telha com beiral 0.25m = 20px -->
+  <polygon points="140,352 160,340 414,196 414,210 184,348" fill="url(#canico)"/>
+  <polygon points="140,352 414,196 414,184 132,348" fill="url(#telha)" stroke="#222" stroke-width="1.5"/>
+  <polygon points="688,352 668,340 414,196 414,210 644,348" fill="url(#canico)"/>
+  <polygon points="688,352 414,196 414,184 696,348" fill="url(#telha)" stroke="#222" stroke-width="1.5"/>
+  <polyline class="lo" points="140,352 414,196 688,352"/>
+
+  <g class="ef" stroke-width="2.2">
+    <line x1="414" y1="202" x2="175" y2="342"/>
+    <line x1="414" y1="202" x2="250" y2="310"/>
+    <line x1="414" y1="202" x2="330" y2="255"/>
+    <line x1="414" y1="202" x2="653" y2="342"/>
+    <line x1="414" y1="202" x2="578" y2="310"/>
+    <line x1="414" y1="202" x2="498" y2="255"/>
+  </g>
+  <rect class="es" x="402" y="188" width="24" height="18" rx="1"/>
+  <rect class="es" x="408" y="206" width="12" height="134"/>
+  <rect class="es" x="300" y="280" width="228" height="10" rx="1"/>
+
+  <text class="t r" x="430" y="180">Cumeeira</text>
+  <text class="t rp" x="424" y="270">Pontalete</text>
+  <text class="t rp" x="240" y="275">Caibros</text>
+  <text class="t rp" x="290" y="230">Caniço + telha</text>
+  <text class="t rp" x="110" y="330">Beiral 0,25</text>
+  <text class="t rp" x="695" y="330">Beiral 0,25</text>
+  <text class="t rp" x="95" y="430">Parede 0,30</text>
+  <text class="t rp" x="670" y="430">Parede 0,30</text>
+  <path class="cf" d="M470 230 A36 36 0 0 1 498 258"/>
+  <text class="t r" x="505" y="242">± H 29,6°</text>
+
+  <line class="c" x1="160" y1="560" x2="668" y2="560"/>
+  <line class="cf" x1="160" y1="552" x2="160" y2="568"/>
+  <line class="cf" x1="668" y1="552" x2="668" y2="568"/>
+  <text class="t r" x="360" y="582">Largura exterior = 6,35 m</text>
+
+  <line class="c" x1="184" y1="600" x2="644" y2="600"/>
+  <line class="cf" x1="184" y1="592" x2="184" y2="608"/>
+  <line class="cf" x1="644" y1="592" x2="644" y2="608"/>
+  <text class="t rp" x="360" y="622">Vão interior = 5,75 m</text>
+
+  <line class="c" x1="740" y1="196" x2="740" y2="340"/>
+  <line class="cf" x1="730" y1="196" x2="750" y2="196"/>
+  <line class="cf" x1="730" y1="340" x2="750" y2="340"/>
+  <text class="t r" transform="translate(768 300) rotate(-90)">1,80 m</text>
+
+  <line class="c" x1="160" y1="170" x2="414" y2="170"/>
+  <line class="cf" x1="160" y1="162" x2="160" y2="178"/>
+  <line class="cf" x1="414" y1="162" x2="414" y2="178"/>
+  <text class="t rp" x="250" y="160">3,175 m</text>
+  <text class="t rp" x="200" y="290">Água H 3,65 m</text>
+  <text class="t s" x="36" y="670">Escala H 1:12,5 · Estrutura alinhada com o sótão existente (cumeeira, pontalete, caibros, caniço).</text>
+</svg>

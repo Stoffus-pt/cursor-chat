@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projecto de telhado — 12,00 × 6,35 m</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --fundo: #efe6d8;
+      --papel: #fffdf8;
+      --tinta: #1a1612;
+      --acento: #8a4024;
+      --linha: #d4c7b4;
+      --sombra: rgba(40, 28, 16, 0.06);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--tinta);
+      font-family: "Source Sans 3", sans-serif;
+      background:
+        radial-gradient(ellipse at 10% 0%, #e8d7c0 0%, transparent 45%),
+        radial-gradient(ellipse at 90% 20%, #e5d2bc 0%, transparent 40%),
+        var(--fundo);
+    }
+    header {
+      padding: 2.5rem 1.25rem 1.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .marca {
+      font-family: "Fraunces", serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin: 0 0 0.4rem;
+      line-height: 1.1;
+    }
+    .lead {
+      margin: 0;
+      max-width: 40rem;
+      font-size: 1.08rem;
+      line-height: 1.5;
+      color: #3d342a;
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem 1.25rem;
+      margin-top: 1.25rem;
+      font-size: 0.95rem;
+    }
+    .meta span strong { color: var(--acento); font-weight: 700; }
+    nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.25rem 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    nav a {
+      color: var(--tinta);
+      text-decoration: none;
+      border-bottom: 1px solid var(--acento);
+      font-size: 0.95rem;
+      padding: 0.15rem 0;
+    }
+    nav a:hover { color: var(--acento); }
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0.5rem 1.25rem 3rem;
+      display: grid;
+      gap: 1.75rem;
+    }
+    section {
+      background: var(--papel);
+      border: 1px solid var(--linha);
+      box-shadow: 0 8px 28px var(--sombra);
+      padding: 1.1rem 1.1rem 1.25rem;
+    }
+    section h2 {
+      font-family: "Fraunces", serif;
+      font-size: 1.25rem;
+      margin: 0 0 0.35rem;
+      color: var(--acento);
+    }
+    section p.desc {
+      margin: 0 0 0.85rem;
+      color: #4a4036;
+      font-size: 0.95rem;
+    }
+    .folha {
+      border: 1px solid var(--linha);
+      background: #faf7f1;
+      overflow: auto;
+    }
+    .folha object, .folha img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .docs {
+      display: grid;
+      gap: 0.75rem;
+    }
+    @media (min-width: 700px) {
+      .docs { grid-template-columns: 1fr 1fr; }
+    }
+    .docs a {
+      display: block;
+      padding: 0.9rem 1rem;
+      border: 1px solid var(--linha);
+      text-decoration: none;
+      color: var(--tinta);
+      background: #fbf6ee;
+    }
+    .docs a:hover { border-color: var(--acento); }
+    .docs a strong {
+      display: block;
+      font-family: "Fraunces", serif;
+      color: var(--acento);
+      margin-bottom: 0.2rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.45rem 0.3rem;
+      border-bottom: 1px solid var(--linha);
+    }
+    th { color: #564a3e; font-weight: 600; }
+    footer {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.25rem 2.5rem;
+      font-size: 0.9rem;
+      color: #5a5046;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="marca">Projecto de telhado</h1>
+    <p class="lead">
+      Anteprojecto de reabilitação do telhado da casa existente — duas águas,
+      estrutura transparente ao sótão actual, cotado com as medidas levantadas.
+    </p>
+    <div class="meta">
+      <span><strong>12,00 × 6,35 m</strong> em planta</span>
+      <span>Paredes <strong>0,30 m</strong></span>
+      <span>Cume → beiral <strong>1,80 m</strong></span>
+      <span>Pendente <strong>≈ 29,6°</strong></span>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#planta">Planta cobertura</a>
+    <a href="#estrutura">Estrutura</a>
+    <a href="#corte-a">Corte A–A</a>
+    <a href="#corte-b">Corte B–B</a>
+    <a href="#detalhe">Beiral</a>
+    <a href="#docs">Documentos</a>
+    <a href="#quadro">Quadro resumo</a>
+  </nav>
+
+  <main>
+    <section id="planta">
+      <h2>01 — Planta da cobertura</h2>
+      <p class="desc">Duas águas, cumeeira centrada, beiral de 0,25 m.</p>
+      <div class="folha">
+        <object data="01-planta-cobertura.svg" type="image/svg+xml" aria-label="Planta da cobertura">
+          <img src="01-planta-cobertura.svg" alt="Planta da cobertura" />
+        </object>
+      </div>
+    </section>
+
+    <section id="estrutura">
+      <h2>02 — Planta da estrutura</h2>
+      <p class="desc">Cumeeira, pontaletes (~2,40 m), frechais e caibros (~0,40 m).</p>
+      <div class="folha">
+        <object data="02-planta-estrutura.svg" type="image/svg+xml" aria-label="Planta da estrutura">
+          <img src="02-planta-estrutura.svg" alt="Planta da estrutura" />
+        </object>
+      </div>
+    </section>
+
+    <section id="corte-a">
+      <h2>03 — Corte transversal A–A</h2>
+      <p class="desc">Vista pela largura 6,35 m — geometria principal do telhado.</p>
+      <div class="folha">
+        <object data="03-corte-transversal.svg" type="image/svg+xml" aria-label="Corte transversal">
+          <img src="03-corte-transversal.svg" alt="Corte transversal A-A" />
+        </object>
+      </div>
+    </section>
+
+    <section id="corte-b">
+      <h2>04 — Corte longitudinal B–B</h2>
+      <p class="desc">Eixo da cumeeira ao longo dos 12,00 m.</p>
+      <div class="folha">
+        <object data="04-corte-longitudinal.svg" type="image/svg+xml" aria-label="Corte longitudinal">
+          <img src="04-corte-longitudinal.svg" alt="Corte longitudinal B-B" />
+        </object>
+      </div>
+    </section>
+
+    <section id="detalhe">
+      <h2>05 — Pormenor do beiral</h2>
+      <p class="desc">Apoio na parede de 0,30 m, frechal, caibro, caniço e telha.</p>
+      <div class="folha">
+        <object data="05-detalhe-beiral.svg" type="image/svg+xml" aria-label="Detalhe do beiral">
+          <img src="05-detalhe-beiral.svg" alt="Pormenor do beiral" />
+        </object>
+      </div>
+    </section>
+
+    <section id="docs">
+      <h2>Documentos do projecto</h2>
+      <div class="docs">
+        <a href="memoria-descritiva.md">
+          <strong>Memória descritiva</strong>
+          Tipologia, faseamento, notas de execução e quantitativos.
+        </a>
+        <a href="lista-materiais.md">
+          <strong>Lista de materiais</strong>
+          Madeira, telha, subcobertura e remates para orçamentação.
+        </a>
+      </div>
+    </section>
+
+    <section id="quadro">
+      <h2>Quadro resumo</h2>
+      <table>
+        <thead>
+          <tr><th>Elemento</th><th>Valor</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Tipologia</td><td>Duas águas</td></tr>
+          <tr><td>Planta</td><td>12,00 × 6,35 m</td></tr>
+          <tr><td>Paredes</td><td>0,30 m</td></tr>
+          <tr><td>Vão interior</td><td>11,40 × 5,75 m</td></tr>
+          <tr><td>Cume → beiral</td><td>1,80 m</td></tr>
+          <tr><td>Pendente</td><td>≈ 29,6°</td></tr>
+          <tr><td>Água inclinada</td><td>≈ 3,65 m</td></tr>
+          <tr><td>Beiral</td><td>0,25 m</td></tr>
+          <tr><td>Área cobertura</td><td>≈ 97 m²</td></tr>
+          <tr><td>Caibros</td><td>≈ 56 un. (e ≈ 0,40 m)</td></tr>
+          <tr><td>Pontaletes</td><td>5 un. (e ≈ 2,40 m)</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    Anteprojecto para apoio à obra e orçamentação. Validar estrutura e ancoragens com técnico responsável antes da execução.
+  </footer>
+</body>
+</html>
