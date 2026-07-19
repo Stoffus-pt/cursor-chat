@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 640" width="920" height="640">
+  <defs>
+    <pattern id="telhaH" patternUnits="userSpaceOnUse" width="14" height="8">
+      <path d="M0 6 Q3.5 1 7 6 Q10.5 1 14 6" fill="none" stroke="#b45a36" stroke-width="0.9"/>
+    </pattern>
+    <style>
+      .f{fill:#faf7f1}.t{font-family:"IBM Plex Sans",sans-serif;fill:#1a1a1a}
+      .ti{font-size:20px;font-weight:700}.s{font-size:12px;fill:#555}.r{font-size:13px}
+      .rp{font-size:11px;fill:#333}.c{stroke:#222;fill:none;stroke-width:1.1}
+      .cf{stroke:#222;fill:none;stroke-width:0.9}.o{stroke:#222;fill:none;stroke-width:2}
+    </style>
+  </defs>
+  <rect class="f" width="920" height="640"/>
+  <text class="t ti" x="32" y="36">Peça 01  Planta da cobertura</text>
+  <text class="t s" x="32" y="56">Telhado de duas águas · 12,00 × 6,35 m · beiral 0,25 m</text>
+
+  <!-- Escala 1m = 50px. Exterior paredes 12x6.35 = 600x317.5. Com beiral +0.25 cada lado = 625x342.5 -->
+  <!-- Origem parede: x=140, y=140 -->
+  <g transform="translate(140,140)">
+    <!-- Cobertura com beiral -->
+    <rect x="-12.5" y="-12.5" width="625" height="342.5" fill="url(#telhaH)" stroke="#222" stroke-width="1.8"/>
+    <!-- Contorno paredes exteriores -->
+    <rect x="0" y="0" width="600" height="317.5" fill="none" stroke="#666" stroke-width="1.2" stroke-dasharray="5 3"/>
+    <!-- Contorno interior -->
+    <rect x="15" y="15" width="570" height="287.5" fill="none" stroke="#aaa" stroke-width="0.8" stroke-dasharray="3 2"/>
+    <!-- Cumeeira (eixo longitudinal) -->
+    <line x1="0" y1="158.75" x2="600" y2="158.75" stroke="#6b4a2e" stroke-width="3"/>
+    <!-- Águas: setas de pendente -->
+    <line x1="300" y1="158.75" x2="300" y2="40" stroke="#8f4528" stroke-width="1.2" marker-end="url(#a)"/>
+    <line x1="300" y1="158.75" x2="300" y2="277" stroke="#8f4528" stroke-width="1.2"/>
+    <polygon points="300,36 294,48 306,48" fill="#8f4528"/>
+    <polygon points="300,286 294,274 306,274" fill="#8f4528"/>
+    <text class="t rp" x="310" y="90">Água N</text>
+    <text class="t rp" x="310" y="240">Água S</text>
+    <text class="t r" x="250" y="152">Cumeeira</text>
+    <!-- Norte -->
+    <g transform="translate(560,-40)">
+      <circle r="18" fill="#fff" stroke="#222"/>
+      <line x1="0" y1="12" x2="0" y2="-12" stroke="#222"/>
+      <polygon points="0,-14 -4,-4 4,-4" fill="#222"/>
+      <text class="t rp" x="-4" y="-18">N</text>
+    </g>
+  </g>
+
+  <!-- Cotas -->
+  <line class="c" x1="140" y1="520" x2="740" y2="520"/>
+  <line class="cf" x1="140" y1="512" x2="140" y2="528"/>
+  <line class="cf" x1="740" y1="512" x2="740" y2="528"/>
+  <text class="t r" x="390" y="542">12,00 m (parede)</text>
+
+  <line class="c" x1="127.5" y1="535" x2="752.5" y2="535"/>
+  <line class="cf" x1="127.5" y1="528" x2="127.5" y2="542"/>
+  <line class="cf" x1="752.5" y1="528" x2="752.5" y2="542"/>
+  <text class="t rp" x="380" y="558">12,50 m (com beiral)</text>
+
+  <line class="c" x1="780" y1="140" x2="780" y2="457.5"/>
+  <line class="cf" x1="772" y1="140" x2="788" y2="140"/>
+  <line class="cf" x1="772" y1="457.5" x2="788" y2="457.5"/>
+  <text class="t r" transform="translate(808 320) rotate(-90)">6,35 m</text>
+
+  <line class="c" x1="800" y1="127.5" x2="800" y2="470"/>
+  <line class="cf" x1="792" y1="127.5" x2="808" y2="127.5"/>
+  <line class="cf" x1="792" y1="470" x2="808" y2="470"/>
+  <text class="t rp" transform="translate(828 320) rotate(-90)">6,85 m c/ beiral</text>
+
+  <!-- Corte A-A -->
+  <line x1="440" y1="120" x2="440" y2="490" stroke="#c0392b" stroke-width="1.5"/>
+  <text class="t rp" x="448" y="130" fill="#c0392b">A</text>
+  <text class="t rp" x="448" y="485" fill="#c0392b">A</text>
+  <text class="t rp" x="32" y="600">Corte AA: peça 03 · Escala planta H 1:20 · Beiral proposto: 0,25 m</text>
+</svg>

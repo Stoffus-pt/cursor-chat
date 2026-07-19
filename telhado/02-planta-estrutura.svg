@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 680" width="920" height="680">
+  <defs>
+    <style>
+      .f{fill:#faf7f1}.t{font-family:"IBM Plex Sans",sans-serif;fill:#1a1a1a}
+      .ti{font-size:20px;font-weight:700}.s{font-size:12px;fill:#555}.r{font-size:13px}
+      .rp{font-size:11px;fill:#333}.c{stroke:#222;fill:none;stroke-width:1.1}
+      .cf{stroke:#222;fill:none;stroke-width:0.9}
+    </style>
+  </defs>
+  <rect class="f" width="920" height="680"/>
+  <text class="t ti" x="32" y="36">Peça 02  Planta da estrutura</text>
+  <text class="t s" x="32" y="56">Cumeeira, pontaletes, madres e caibros · espaçamento caibros H 0,40 m</text>
+
+  <!-- Escala 1m=50px. Interior 11.4 x 5.75 = 570 x 287.5. Parede exterior outline -->
+  <g transform="translate(140,120)">
+    <!-- Parede -->
+    <rect x="0" y="0" width="600" height="317.5" fill="#f0ebe2" stroke="#222" stroke-width="1.8"/>
+    <rect x="15" y="15" width="570" height="287.5" fill="#fffdf8" stroke="#222" stroke-width="1.2"/>
+
+    <!-- Madres / frechais nas paredes longitudinais -->
+    <rect x="15" y="15" width="570" height="10" fill="#8a6240"/>
+    <rect x="15" y="292.5" width="570" height="10" fill="#8a6240"/>
+
+    <!-- Cumeeira -->
+    <rect x="15" y="153.75" width="570" height="10" fill="#6b4a2e"/>
+
+    <!-- Pontaletes a cada ~2.40 m ao longo do comprimento interior -->
+    <!-- posições x relativas ao interior: 15+40, +120... -->
+    <g fill="#6b4a2e">
+      <rect x="55" y="148" width="8" height="22"/>
+      <rect x="175" y="148" width="8" height="22"/>
+      <rect x="295" y="148" width="8" height="22"/>
+      <rect x="415" y="148" width="8" height="22"/>
+      <rect x="535" y="148" width="8" height="22"/>
+    </g>
+
+    <!-- Caibros: linhas perpendiculares à cumeeira, espaçadas 0.40m = 20px -->
+    <g stroke="#a07850" stroke-width="1.4">
+      <!-- gerar ~29 caibros ao longo de 11.4m -->
+      <g id="caibros">
+        <line x1="35" y1="25" x2="35" y2="292.5"/>
+        <line x1="55" y1="25" x2="55" y2="292.5"/>
+        <line x1="75" y1="25" x2="75" y2="292.5"/>
+        <line x1="95" y1="25" x2="95" y2="292.5"/>
+        <line x1="115" y1="25" x2="115" y2="292.5"/>
+        <line x1="135" y1="25" x2="135" y2="292.5"/>
+        <line x1="155" y1="25" x2="155" y2="292.5"/>
+        <line x1="175" y1="25" x2="175" y2="292.5"/>
+        <line x1="195" y1="25" x2="195" y2="292.5"/>
+        <line x1="215" y1="25" x2="215" y2="292.5"/>
+        <line x1="235" y1="25" x2="235" y2="292.5"/>
+        <line x1="255" y1="25" x2="255" y2="292.5"/>
+        <line x1="275" y1="25" x2="275" y2="292.5"/>
+        <line x1="295" y1="25" x2="295" y2="292.5"/>
+        <line x1="315" y1="25" x2="315" y2="292.5"/>
+        <line x1="335" y1="25" x2="335" y2="292.5"/>
+        <line x1="355" y1="25" x2="355" y2="292.5"/>
+        <line x1="375" y1="25" x2="375" y2="292.5"/>
+        <line x1="395" y1="25" x2="395" y2="292.5"/>
+        <line x1="415" y1="25" x2="415" y2="292.5"/>
+        <line x1="435" y1="25" x2="435" y2="292.5"/>
+        <line x1="455" y1="25" x2="455" y2="292.5"/>
+        <line x1="475" y1="25" x2="475" y2="292.5"/>
+        <line x1="495" y1="25" x2="495" y2="292.5"/>
+        <line x1="515" y1="25" x2="515" y2="292.5"/>
+        <line x1="535" y1="25" x2="535" y2="292.5"/>
+        <line x1="555" y1="25" x2="555" y2="292.5"/>
+        <line x1="575" y1="25" x2="575" y2="292.5"/>
+      </g>
+    </g>
+
+    <!-- Asnas / tesouras simplificadas nos pontaletes (linhas diagonais no plano = linhas curtas) -->
+    <g stroke="#5a3d24" stroke-width="2" fill="none">
+      <polyline points="55,25 55,158.75 55,292.5"/>
+      <polyline points="175,25 175,158.75 175,292.5"/>
+      <polyline points="295,25 295,158.75 295,292.5"/>
+      <polyline points="415,25 415,158.75 415,292.5"/>
+      <polyline points="535,25 535,158.75 535,292.5"/>
+    </g>
+
+    <text class="t r" x="240" y="148">Cumeeira H 11,40 m</text>
+    <text class="t rp" x="20" y="-8">Frechal / madre de beiral</text>
+    <text class="t rp" x="60" y="175">Pontaletes H 2,40 m</text>
+  </g>
+
+  <!-- Legenda -->
+  <g transform="translate(140,480)">
+    <rect width="16" height="8" fill="#6b4a2e"/><text class="t rp" x="24" y="8">Cumeeira / pontaletes</text>
+    <rect y="24" width="16" height="8" fill="#8a6240"/><text class="t rp" x="24" y="32">Frechal nas paredes longitudinais</text>
+    <line x1="0" y1="52" x2="16" y2="52" stroke="#a07850" stroke-width="2"/><text class="t rp" x="24" y="56">Caibros (e H 0,40 m) · L H 3,65 m cada</text>
+    <line x1="0" y1="76" x2="16" y2="76" stroke="#5a3d24" stroke-width="2"/><text class="t rp" x="24" y="80">Linha de asna / apoio vertical</text>
+  </g>
+
+  <text class="t rp" x="140" y="600">Quantitativo orientativo: 1 cumeeira · 5 pontaletes · 2 frechais · H 56 caibros (28 por água) · ripado / caniço conforme pormenor</text>
+  <text class="t rp" x="140" y="620">Nota: dimensões comerciais da madeira a confirmar em obra (ex.: cumeeira 12×18 cm; caibros Ø1012 cm ou 8×12 cm).</text>
+</svg>
