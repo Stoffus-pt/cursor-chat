@@ -3,138 +3,144 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vista lateral do telhado</title>
+  <title>Corte transversal do telhado</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --fundo: #f4efe6;
-      --tinta: #1c1a17;
-      --acento: #9a4b2e;
+      --fundo: #f3ebe0;
+      --tinta: #1c1814;
+      --acento: #8f4528;
       --papel: #fffdf8;
-      --linha: #d7cfc0;
+      --linha: #d6cbb8;
     }
-
     * { box-sizing: border-box; }
-
     body {
       margin: 0;
       min-height: 100vh;
       font-family: "Source Sans 3", sans-serif;
       color: var(--tinta);
       background:
-        radial-gradient(ellipse at 20% 0%, #efe4d2 0%, transparent 50%),
-        radial-gradient(ellipse at 90% 100%, #e8d7c4 0%, transparent 45%),
+        radial-gradient(ellipse at 15% 0%, #eadcc8 0%, transparent 48%),
+        radial-gradient(ellipse at 100% 100%, #e2d0ba 0%, transparent 42%),
         var(--fundo);
     }
-
     main {
-      max-width: 980px;
+      max-width: 1040px;
       margin: 0 auto;
-      padding: 2.5rem 1.25rem 3rem;
+      padding: 2.25rem 1.2rem 3rem;
     }
-
     h1 {
       font-family: "Fraunces", serif;
       font-weight: 600;
-      font-size: clamp(1.8rem, 4vw, 2.6rem);
-      margin: 0 0 0.4rem;
+      font-size: clamp(1.7rem, 3.8vw, 2.4rem);
+      margin: 0 0 0.35rem;
       letter-spacing: -0.02em;
     }
-
     .lead {
-      margin: 0 0 1.75rem;
-      max-width: 42rem;
+      margin: 0 0 1.5rem;
+      max-width: 44rem;
       line-height: 1.5;
-      color: #3d3830;
+      color: #3f3830;
     }
-
     .folha {
       background: var(--papel);
       border: 1px solid var(--linha);
-      padding: 1rem;
+      padding: 0.75rem;
       overflow: auto;
     }
-
-    .folha img,
-    .folha object {
+    .folha object,
+    .folha img {
       display: block;
       width: 100%;
       height: auto;
     }
-
     .grelha {
       display: grid;
-      gap: 1.5rem;
-      margin-top: 1.75rem;
+      gap: 1.25rem;
+      margin-top: 1.5rem;
     }
-
-    @media (min-width: 800px) {
-      .grelha { grid-template-columns: 1fr 1fr; }
+    @media (min-width: 780px) {
+      .grelha { grid-template-columns: 1fr 1fr 1fr; }
     }
-
     h2 {
       font-family: "Fraunces", serif;
-      font-size: 1.15rem;
-      margin: 0 0 0.6rem;
+      font-size: 1.05rem;
+      margin: 0 0 0.5rem;
       color: var(--acento);
     }
-
-    ul {
+    ul, dl {
       margin: 0;
-      padding-left: 1.1rem;
+      padding: 0;
       line-height: 1.55;
     }
-
+    ul { padding-left: 1.1rem; }
+    dl div {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.75rem;
+      border-bottom: 1px solid var(--linha);
+      padding: 0.25rem 0;
+    }
+    dt { color: #564e44; }
+    dd { margin: 0; font-weight: 600; }
     .nota {
-      margin-top: 1.5rem;
-      padding: 0.9rem 1rem;
+      margin-top: 1.4rem;
+      padding: 0.85rem 1rem;
       border-left: 3px solid var(--acento);
-      background: rgba(154, 75, 46, 0.08);
+      background: rgba(143, 69, 40, 0.08);
       font-size: 0.95rem;
     }
   </style>
 </head>
 <body>
   <main>
-    <h1>Vista lateral do telhado</h1>
+    <h1>Corte transversal do telhado</h1>
     <p class="lead">
-      Elevação do frontão de um telhado de duas águas, com beirados, cumeeira e pendente indicativos.
-      Os valores são ilustrativos e devem ser ajustados à medida real da obra.
+      Vista lateral segundo o corte da largura da casa (6,35 m), com as medidas que indicaste
+      e a estrutura típica do sótão actual (cumeeira, pontalete, caibros, caniço e telha).
     </p>
 
     <div class="folha">
-      <object data="vista-lateral.svg" type="image/svg+xml" aria-label="Desenho técnico da vista lateral do telhado">
-        <img src="vista-lateral-telhado.png" alt="Vista lateral do telhado de duas águas" />
+      <object data="vista-lateral.svg" type="image/svg+xml" aria-label="Corte transversal cotado do telhado">
+        <img src="vista-lateral-telhado.png" alt="Corte transversal do telhado" />
       </object>
     </div>
 
     <div class="grelha">
       <section>
-        <h2>Elementos</h2>
-        <ul>
-          <li>Cumeeira no ponto mais alto</li>
-          <li>Duas águas com telha</li>
-          <li>Beirado de ~0,50 m de cada lado</li>
-          <li>Pendente α ≈ 30°</li>
-          <li>Estrutura sugerida (asnas / madres)</li>
-        </ul>
+        <h2>Medidas da casa</h2>
+        <dl>
+          <div><dt>Comprimento</dt><dd>12,00 m</dd></div>
+          <div><dt>Largura</dt><dd>6,35 m</dd></div>
+          <div><dt>Parede</dt><dd>0,30 m</dd></div>
+          <div><dt>Vão interior</dt><dd>5,75 m</dd></div>
+        </dl>
       </section>
       <section>
-        <h2>Cotas de partida</h2>
+        <h2>Telhado</h2>
+        <dl>
+          <div><dt>Tipologia</dt><dd>Duas águas</dd></div>
+          <div><dt>Cume → beiral</dt><dd>1,80 m</dd></div>
+          <div><dt>Pendente</dt><dd>≈ 29,6°</dd></div>
+          <div><dt>Água (inclinada)</dt><dd>≈ 3,65 m</dd></div>
+        </dl>
+      </section>
+      <section>
+        <h2>Estrutura</h2>
         <ul>
-          <li>Largura da parede ≈ 8,00 m</li>
-          <li>Altura da parede ≈ 2,70 m</li>
-          <li>Altura do telhado ≈ 2,30 m</li>
-          <li>Beirado ≈ 0,50 m</li>
+          <li>Cumeeira centrada</li>
+          <li>Pontalete vertical</li>
+          <li>Caibros nas duas águas</li>
+          <li>Caniço sob a telha</li>
         </ul>
       </section>
     </div>
 
     <p class="nota">
-      Se quiseres outra tipologia (uma água, quatro águas, mansarda) ou medidas exactas,
-      indica largura, altura desejada e tipo de telha — actualizo o desenho.
+      O corte mostra a largura (6,35 m). O comprimento de 12,00 m corre perpendicular a este desenho.
+      Se quiseres a elevação longitudinal (12 m) ou planta da cobertura, peço e faço a seguir.
     </p>
   </main>
 </body>
