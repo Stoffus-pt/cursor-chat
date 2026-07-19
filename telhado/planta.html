@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Corte transversal do telhado</title>
+  <title>Planta do telhado</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
@@ -30,6 +30,23 @@
       max-width: 1040px;
       margin: 0 auto;
       padding: 2.25rem 1.2rem 3rem;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.25rem;
+      margin-bottom: 1.25rem;
+      font-size: 0.95rem;
+    }
+    nav a {
+      color: var(--acento);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+    nav a:hover { border-bottom-color: var(--acento); }
+    nav a[aria-current="page"] {
+      font-weight: 600;
+      border-bottom-color: var(--acento);
     }
     h1 {
       font-family: "Fraunces", serif;
@@ -96,56 +113,56 @@
 </head>
 <body>
   <main>
-    <nav aria-label="Desenhos do telhado" style="display:flex;flex-wrap:wrap;gap:0.75rem 1.25rem;margin-bottom:1.25rem;font-size:0.95rem">
-      <a href="index.html" aria-current="page" style="color:var(--acento);text-decoration:none;font-weight:600;border-bottom:1px solid var(--acento)">Corte transversal</a>
-      <a href="planta.html" style="color:var(--acento);text-decoration:none;border-bottom:1px solid transparent">Planta</a>
+    <nav aria-label="Desenhos do telhado">
+      <a href="index.html">Corte transversal</a>
+      <a href="planta.html" aria-current="page">Planta</a>
     </nav>
 
-    <h1>Corte transversal do telhado</h1>
+    <h1>Planta do telhado</h1>
     <p class="lead">
-      Vista lateral segundo o corte da largura da casa (6,35 m), com as medidas que indicaste
-      e a estrutura típica do sótão actual (cumeeira, pontalete, caibros, caniço e telha).
+      Vista de cima da cobertura de duas águas, cotada com o comprimento de 12,00 m,
+      a largura de 6,35 m e a cumeeira centrada. O corte A–A corresponde à vista lateral.
     </p>
 
     <div class="folha">
-      <object data="vista-lateral.svg" type="image/svg+xml" aria-label="Corte transversal cotado do telhado">
-        <img src="vista-lateral-telhado.png" alt="Corte transversal do telhado" />
+      <object data="planta.svg" type="image/svg+xml" aria-label="Planta cotada do telhado">
+        <img src="planta-telhado.png" alt="Planta do telhado" />
       </object>
     </div>
 
     <div class="grelha">
       <section>
-        <h2>Medidas da casa</h2>
+        <h2>Medidas em planta</h2>
         <dl>
           <div><dt>Comprimento</dt><dd>12,00 m</dd></div>
           <div><dt>Largura</dt><dd>6,35 m</dd></div>
           <div><dt>Parede</dt><dd>0,30 m</dd></div>
-          <div><dt>Vão interior</dt><dd>5,75 m</dd></div>
+          <div><dt>Beiral</dt><dd>≈ 0,25 m</dd></div>
         </dl>
       </section>
       <section>
-        <h2>Telhado</h2>
+        <h2>Cobertura</h2>
         <dl>
           <div><dt>Tipologia</dt><dd>Duas águas</dd></div>
-          <div><dt>Cume → beiral</dt><dd>1,80 m</dd></div>
+          <div><dt>Cumeeira</dt><dd>eixo a 3,175 m</dd></div>
           <div><dt>Pendente</dt><dd>≈ 29,6°</dd></div>
           <div><dt>Água (inclinada)</dt><dd>≈ 3,65 m</dd></div>
         </dl>
       </section>
       <section>
-        <h2>Estrutura</h2>
+        <h2>Leitura do desenho</h2>
         <ul>
-          <li>Cumeeira centrada</li>
-          <li>Pontalete vertical</li>
-          <li>Caibros nas duas águas</li>
-          <li>Caniço sob a telha</li>
+          <li>Cumeeira no eixo longitudinal</li>
+          <li>Setas no sentido da pendente</li>
+          <li>Corte A–A = vista lateral</li>
+          <li>Caibros perpendiculares à cumeeira</li>
         </ul>
       </section>
     </div>
 
     <p class="nota">
-      O corte mostra a largura (6,35 m). O comprimento de 12,00 m corre perpendicular a este desenho.
-      A <a href="planta.html">planta do telhado</a> mostra a cobertura vista de cima, com o corte A–A neste plano.
+      A planta mostra o contorno das paredes e o voo do beiral. A altura do cume (1,80 m acima do beiral)
+      lê-se no <a href="index.html">corte transversal</a>.
     </p>
   </main>
 </body>
